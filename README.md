@@ -1,35 +1,10 @@
-# pymongo-api
+# Ссылка на схему
 
-## Как запустить
+https://drive.google.com/file/d/1iHMa9JBVJrVHRzhlZfsHK5si-CSEnrqE/view?usp=sharing
 
-Запускаем mongodb и приложение
+Или файлом в корне [schema.drawio](./schema.drawio)
 
-```shell
-docker compose up -d
-```
-
-Заполняем mongodb данными
-
-```shell
-./scripts/mongo-init.sh
-```
-
-## Как проверить
-
-### Если вы запускаете проект на локальной машине
-
-Откройте в браузере http://localhost:8080
-
-### Если вы запускаете проект на предоставленной виртуальной машине
-
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+# Реализация задач с описанием запуска
+- [Шардирование](./mongo-sharding/README.md)
+- [Репликация](./mongo-sharding-repl/README.md)
+- [Кэширование (финальное)](./sharding-repl-cache/README.md)
